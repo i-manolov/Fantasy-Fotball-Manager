@@ -1,0 +1,18 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<h1> Home Page </h1><br>
+{% if g.user.is_authenticated() %}
+<p> <strong> username: {{ g.user.user_name }}</strong> </p>
+<p> last logged in {{ g.user.last_seen }} </p> <br> <br>
+<p> <a href="{{ url_for('height_vs_weight') }}"<a>temp working graph</a></p>
+
+	
+{% else %}
+<p> <strong>You are not logged in </strong></p>
+{% endif %}
+
+
+{% endblock %}
+

@@ -1,0 +1,91 @@
+{% extends "base2.html" %}
+{% block content %}
+
+<script>
+		//alert('call')
+		m3()
+</script>
+<h1>Height/Weight---by position---by status</h1>
+
+<table id = "tab1">
+	<td id= td1> Default </td>
+	<td id= td2> Options </td>
+</table>
+
+<div id = 'chart_divd1'>
+<form>
+<fieldset name= 'Choice'>
+<div id = 'choose_p' >
+<p>Position<p/>
+<select id = Position multiple='multiple'>
+<option class="postion"  name = a1 value="All" >All
+<option class="postion"  name = a2  value="TE" checked='checked' >TE
+<option class="postion"  name = a3  value="T"  >T
+<option class="postion"  name = a4  value="OG" >OG
+<option class="postion"  name = a5  value="OL" >OL
+<option class="postion"  name = a6  value="QB" >QB
+<option class="postion"  name = a7  value="NT" >NT
+<option class="postion"  name = a8  value="OLB">OLB
+<option class="postion"  name = a9  value="G"  >G
+<!--<option class="postion"  name = a10  value="UNK">UNK-->
+<option class="postion"  name = a11  value="RB" >RB
+<option class="postion"  name = a12  value="MLB">MLB
+<option class="postion"  name = a13  value="OT" >OT
+<option class="postion"  name = a14  value="S"  >S
+<option class="postion"  name = a15  value="WR" >WR 
+<option class="postion"  name = a16  value="LS" >LS
+<option class="postion"  name = a17  value="SAF">SAF
+<option class="postion"  name = a18  value="P"  >P
+<option class="postion"  name = a19  value="DB" >DB
+<option class="postion"  name = a20  value="K"  >K
+<option class="postion"  name = a21  value="CB" >CB
+<option class="postion"  name = a22  value="C"  >C
+<option class="postion"  name = a23  value="FB" >FB
+<option class="postion"  name = a24  value="LB" >LB
+<option class="postion"  name = a25  value="ILB">ILB
+<option class="postion"  name = a26  value="DT" >DT
+<option class="postion"  name = a27  value="DE" >DE
+<option class="postion"  name = a28  value="FS" >FS
+</select>
+<p><a href=# id=getJ > Show Graph</a></p>
+</div>
+<div id='choose_s' >
+<p>Status</p>
+<select id=Status multiple='multiple'>
+<option class="status"  name="b5" value="All"  disabled>All
+<option class="status"  name="b1" value="Active" checked="checked">Active
+<!--<option class="status"  name="b2" value="Unknown">Unknown-->
+<option class="status"  name="b3" value="InjuredReseve">InjuredReseve
+<option class="status"  name="b4" value="PUP" >PUP 
+</select>
+</div>
+<div id='choose_y' >
+<p class = p1>Year</p>
+<select id=seasonY >
+<option class="seas"  name="c1" value= 0 checked="checked">unspecific
+<option class="seas"  name="c2" value= 2009 >2009
+<option class="seas"  name="c3" value= 2010 >2010
+<option class="seas"  name="c4" value= 2011 >2011
+<option class="seas"  name="c5" value= 2012 >2012
+<option class="seas"  name="c6" value= 2013 >2013
+</select>
+</div>
+<div id='legend' >
+<p>offense</p>
+<select id=off_def  >
+<option class="off_def"  name="d1" value= off  disabled>offense
+<option class="off_def"  name="d2" value= def checked>Position
+<option class="off_def"  name="d3" value= off_def  >offense/defense
+</select>
+</div>
+
+<fieldset>
+</form>
+</div>
+<p id=result>?</p>
+<p id= char></p>
+<p id =chart></p>
+<div id =displayChart></div>
+<div id="chartContainer"></div>
+
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "base2.html" %}
+{% block content %}
+<script>
+\*
+<script>m1()</script>
+<h1>Height/Weight---by position---by status</h1>
+<p>
+<div id = 'chart_divd1'>
+<form>
+<fieldset name= 'Position'>
+<div id = 'choose_p' >
+<p>Position<p/>
+<select multiple='multiple'>
+<option class="postion"  name = a1 value="All" checked="checked">All
+<option class="postion"  name = a2  value="TE" >TE
+<option class="postion"  name = a3  value="T"  >T
+<option class="postion"  name = a4  value="OG" >OG
+<option class="postion"  name = a5  value="OL" >OL
+<option class="postion"  name = a6  value="QB" >QB
+<option class="postion"  name = a7  value="NT" >NT
+<option class="postion"  name = a8  value="OLB">OLB
+<option class="postion"  name = a9  value="G"  >G
+<option class="postion"  name = a10  value="UNK">UNK<br>
+<option class="postion"  name = a11  value="RB" >RB
+<option class="postion"  name = a12  value="MLB">MLB
+<option class="postion"  name = a13  value="OT" >OT
+<option class="postion"  name = a14  value="S"  >S
+<option class="postion"  name = a15  value="WR" >WR 
+<option class="postion"  name = a16  value="LS" >LS
+<option class="postion"  name = a17  value="SAF">SAF
+<option class="postion"  name = a18  value="P"  >P
+<option class="postion"  name = a19  value="DB" >DB<br>
+<option class="postion"  name = a20  value="K"  >K
+<option class="postion"  name = a21  value="CB" >CB
+<option class="postion"  name = a22  value="C"  >C
+<option class="postion"  name = a23  value="FB" >FB
+<option class="postion"  name = a24  value="LB" >LB
+<option class="postion"  name = a25  value="ILB">ILB
+<option class="postion"  name = a26  value="DT" >DT
+<option class="postion"  name = a27  value="DE" >DE
+<option class="postion"  name = a28  value="FS" >FS
+</select>
+</div>
+<div id='choose_s' >
+<p>Status</p>
+<select name=b multiple='multiple'>
+<option class="status"  name="b5" value="All" checked="checked">All
+<option class="status"  name="b1" value="Active" >Active
+<option class="status"  name="b2" value="Unknown">Unknown
+<option class="status"  name="b3" value="InjuredReseve">InjuredReseve
+<option class="status"  name="b4" value="PUP" >PUP 
+</select>
+</div>
+<p><a href=# id=getJ > Show Graph</a>
+<fieldset><p id=result>?</p>
+</form>
+</div>
+<p id =chart></p>
+*/
+</script>
+
+{% endblock %}

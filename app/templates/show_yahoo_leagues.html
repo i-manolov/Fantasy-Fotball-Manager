@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+{% for data in leagues %}
+	<header>
+	<h3 align="center">  <a href="{{ url_for('show_yahoo_teams', league_id=data.league_id )  }}"<a>{{data.season_year}} : {{ data.league_name }} </a></h3>
+	</header>
+	<p align="center"> <strong> League ID:</strong> {{ data.full_league_id() }}
+	<strong> start:</strong> {{ data.start_date }}
+	<strong>end: </strong> {{ data.end_date }}
+	<strong>num_teams:</strong> {{ data.num_teams }} </p>
+		<p align="center"> <a href="{{ url_for('new_league_info', game_key = data.game_key, yahoo_league_id = data.yahoo_league_id ) }}"<a>
+				<strong>Import ALL stats</strong></a></p>
+			<p align="center"> <a href="{{ data.league_url }}"<a>Yahoo League Link</a> </p><br>
+
+{% endfor %}
+{% endblock %}
+

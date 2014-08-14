@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class ="container">
+<div class ="content">
+<div class ="row-fluid">
+<div class = "offset4 span4">
+
+<div class="control-group left">
+<h2> Sign In </h2>
+</div>
+
+{% for message in form.username.errors %}
+	<div class="flash">{{ message }}</div>
+	{% endfor %}
+	
+{% for message in form.password.errors %}
+	<div class="flash">{{ message }}</div>
+{% endfor %}
+
+<form class = "form-horizontal" action="{{ url_for('login') }}" method=post>
+	
+ <div class="control-group left">
+{{ form.hidden_tag() }}
+	</div>
+  <div class="control-group left">
+	{{ form.username.label }}
+	{{ form.username }}
+</div>
+ <div class="control-group left">
+	{{ form.password.label }}
+	{{ form.password}}
+</div>
+	 <div class="control-group left">
+	{{ form.submit }}
+</div>
+</form>
+
+
+
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
+

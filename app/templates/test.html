@@ -1,0 +1,357 @@
+{% extends "base2.html" %}
+{% block content %}
+<script>
+
+ $('document').ready( function() {
+	$.getJSON ($SCRIPT_ROOT + '/_getJpy1', 
+		{ 
+			week:17
+
+		},
+		function(data) 	
+		{ 		
+			$('#toptab > div').hide();
+			$('#toptab h1').bind('click',function(event) {
+				$(this).siblings('div:visible').slideUp('2000');
+				$(this).next().animate({'height':'toggle'},'2000','swing');	
+				if ( $(event.target).is('#h1One') ) { top_players(data.toppy, "passing_yds"   ) }
+				else if ( $(event.target).is('#h1Two') ) { top_players(data.topry, "receiving_yds" ) }	
+				else if ( $(event.target).is('#h1Three') ) { top_players(data.toppt, "passing_tds" ) }
+				else if ( $(event.target).is('#h1Four') ) { top_players(data.toprt, "receiving_tds") };
+
+			});
+		});
+					
+	});
+</script>
+	
+
+<div id = toptab>
+<h1 id = h1One class = myh1 > top players by passing yds </h1>
+<div class =  inside > 
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in toppy %}
+		{% if p.mark0 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppy %}
+		{% if p.mark0 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> season </td>
+		{% for p in toppy %}
+		{% if p.mark0 %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table2>
+		<tr> <td>Player's name</td>
+		{% for p in toppy %}
+		{% if p.mark1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppy %}
+		{% if p.mark1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> current week </td>
+		{% for p in toppy %}
+		{% if p.mark1 %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table3>
+		<tr> <td>Player's name</td>
+		{% for p in toppy %}
+		{% if p.mark2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppy %}
+		{% if p.mark2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> previous week </td>
+		{% for p in toppy %}
+		{% if p.mark2 %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</div>
+
+<h1 id = h1Two class = myh1 > top players by receiving yds </h1>
+<div class =  inside >
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in topry %}
+		{% if p.mark0 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in topry%}
+		{% if p.mark0 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> season </td>
+		{% for p in topry %}
+		{% if p.mark0 %}
+			 <td>{{ p.receiving_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table2>
+		<tr> <td>Player's name</td>
+		{% for p in topry %}
+		{% if p.mark1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in topry %}
+		{% if p.mark1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> current week </td>
+		{% for p in topry %}
+		{% if p.mark1 %}
+			 <td>{{ p.receiving_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table3>
+		<tr> <td>Player's name</td>
+		{% for p in topry %}
+		{% if p.mark2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in topry %}
+		{% if p.mark2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> previous week </td>
+		{% for p in topry %}
+		{% if p.mark2 %}
+			 <td>{{ p.receiving_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</div>
+
+<h1 id = h1Three class = myh1 > top players by passing tds </h1>
+<div class =  inside >
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in toppt %}
+		{% if p.mark0 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppt %}
+		{% if p.mark0 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> season </td>
+		{% for p in toppt %}
+		{% if p.mark0 %}
+			 <td>{{ p.passing_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table2>
+		<tr> <td>Player's name</td>
+		{% for p in toppt %}
+		{% if p.mark1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppt %}
+		{% if p.mark1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> current week </td>
+		{% for p in toppt %}
+		{% if p.mark1 %}
+			 <td>{{ p.passing_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table3>
+		<tr> <td>Player's name</td>
+		{% for p in toppt %}
+		{% if p.mark2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppt %}
+		{% if p.mark2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> previous week </td>
+		{% for p in toppt %}
+		{% if p.mark2 %}
+			 <td>{{ p.passing_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</div>
+
+<h1 id = h1Four class = myh1 > top players by receiving tds </h1>
+<div class =  inside >
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in toprt %}
+		{% if p.mark0 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toprt %}
+		{% if p.mark0 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> season </td>
+		{% for p in toprt %}
+		{% if p.mark0 %}
+			 <td>{{ p.receiving_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table2>
+		<tr> <td>Player's name</td>
+		{% for p in toprt %}
+		{% if p.mark1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toprt %}
+		{% if p.mark1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> current week </td>
+		{% for p in toprt %}
+		{% if p.mark1 %}
+			 <td>{{ p.receiving_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table3>
+		<tr> <td>Player's name</td>
+		{% for p in toprt %}
+		{% if p.mark2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toprt %}
+		{% if p.mark2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> previous week </td>
+		{% for p in toprt %}
+		{% if p.mark2 %}
+			 <td>{{ p.receiving_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</div>
+
+</div>
+<div id=graph><p id= graph1 >Click to Delete Graph</p><div>
+
+{% endblock %}

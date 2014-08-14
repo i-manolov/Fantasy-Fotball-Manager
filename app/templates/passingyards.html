@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block content %}
+<div class = "container-fluid">
+<div class = "row-fluid">
+<div class="col-lg-2 col-offset-12 centered">
+
+<script>
+
+ $('document').ready( function() {
+	$.getJSON ($SCRIPT_ROOT + '/_getJpy1', 
+		{ 
+			week:17
+
+		},
+		function(data) 	
+		{ 		
+			$('#toptab > div').hide();
+			$('#toptab h1').bind('click',function(event) {
+				$(this).siblings('div:visible').slideUp('2000');
+				$(this).next().animate({'height':'toggle'},'2000','swing');	
+				if ( $(event.target).is('#h1One') ) { top_players(data.toppy, "passing_yds"   ) };
+
+			});
+		});
+					
+	});
+</script>
+	
+
+<div class = "span6 center" id = toptab>
+<h1 id = h1One class = myh1 > Top players by passing yds </h1>
+<div class =  inside > 
+	<table class = "table table-striped">
+		<tr> <td>Player's name</td>
+		{% for p in toppy %}
+		{% if p.mark0 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppy %}
+		{% if p.mark0 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> season </td>
+		{% for p in toppy %}
+		{% if p.mark0 %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+
+	<table class = "table table-striped">
+		<tr> <td>Player's name</td>
+		{% for p in toppy %}
+		{% if p.mark1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppy %}
+		{% if p.mark1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> current week </td>
+		{% for p in toppy %}
+		{% if p.mark1 %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = "table table-striped">
+		<tr> <td>Player's name</td>
+		{% for p in toppy %}
+		{% if p.mark2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in toppy %}
+		{% if p.mark2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> previous week </td>
+		{% for p in toppy %}
+		{% if p.mark2 %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</div>
+</div>
+</div>
+</div>
+
+<div class ="span12 pagination-centered" id=graph><p id= graph1 >  Click to Delete Graph </p><div>
+
+
+
+
+{% endblock %}

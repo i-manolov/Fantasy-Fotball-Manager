@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% if title %}
+		<title>{{title}}Fantasy Football Tracker</title>
+		{% else %}
+		<title> LeaguePlus+ </title>
+		{% endif %}
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}" >
+
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap-responsive.css' )}}" >
+    <script type=text/javascript src=" {{ url_for('static', filename='js/bootstrap.min.js' ) }}"></script>
+    <!-- JQUERY -->
+    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/black-tie/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v1.1.2.min.js"></script>
+    <script type=text/javascript>var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/jq/jq3.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/jq/jq2.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/jq/jq1.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot1.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot2.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot3.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot4.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot5.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot6.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot7.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot8.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot9.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot10.js')}}"></script>
+    <script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot11.js')}}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  
+  <style>
+  .ui-widget {
+    font-size:85%;
+  }
+  </style>  
+  <script type="text/javascript">
+  idleTime = 0;
+  $(document).ready(function () {
+  // THOSE ARE THE REGISTERED USER VIEWS SO FAR
+  if (window.location.pathname ==='/rss/roto_players' || window.location.href===' /rss/rotoworld' || window.location.pathname=== /rss/yahoo /profile'){
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+      idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+      idleTime = 0;
+    });
+  }
+  });
+  function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 19) { // 20 minutes
+      window.location.href='/logout'
+    }
+  }
+
+  </script>
+	</head>
+	<body>
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		
+					<a class="brand" href="{{ url_for('home') }}">League Plus</a>
+			<div class= "nav-collapse collapse">
+				<ul class ="nav">
+			<li><a href="{{ url_for('profile') }}"<a>Profile</a></li>
+			<li><a href="{{ url_for('signup') }}"<a>Signup</a></li>
+			<li><a href="{{ url_for('login') }}"<a>Login</a></li>
+			<li><a href="{{ url_for('logout') }}"<a>Logout</a></li>
+			
+		</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+
+<div class="span2 pull-left">  
+          <div class="well sidebar-nav">  
+            <ul class="nav nav-list"> 
+          <li><a href="{{ url_for('offense') }}"<a>Height VS Weight</a></li>
+            <li> <a href="{{url_for('passingyards')}}"<a> Passing Yards</a></li>
+            <li><a href="{{url_for('recivingyards')}}"<a> Receiving Yards </a></li>
+            <li><a href="{{url_for('recivingtouchdowns')}}"<a>Receiving Touchdowns </a></li>
+            <li><a href="{{url_for('passingtouchdowns')}}"<a>Passing Touchdowns </a></li>
+        </ul>
+      </div>
+      </div>
+     
+     <div class="span2 pull-right">
+      <div class="well sidebar-nav">    
+            <ul class="nav nav-list">
+        <h2>Sidebar</h2>
+        <li><a href="{{ url_for('yahoo_oauth') }}"<a>Yahoo Auth</a></li>
+      <li><a href="{{ url_for('new_user_info') }}"<a>Yahoo Leagues Info</a></li>
+      <li><a href="{{ url_for('get_yahoo_rss') }}"<a>yahoo rss</a></li>
+      <li><a href="{{ url_for('get_roto_rss') }}"<a>rotoword rss</a></li>
+      <li><a href="{{ url_for('get_roto_player') }}"<a>roto player news</a></li>
+      </ul>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+		<hr>
+		{% block content %}{% endblock %}
+
+
+
+
+	</body>
+
+</html>

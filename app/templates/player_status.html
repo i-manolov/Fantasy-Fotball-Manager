@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+{% for data in status %}
+<p> id: {{data.nfl_player_id }} {{data.old_status }} {{data.new_status }} {{data.date }}     </p>
+
+{% endfor %}
+
+{% endblock %}

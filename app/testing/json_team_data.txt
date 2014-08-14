@@ -1,0 +1,706 @@
+{
+   "fantasy_content":{
+      "yahoo:      uri":"/fantasy/v2/league/nfl.l.1173612/teams",
+      "copyright":"Data provided by Yahoo! and STATS,LLC",
+      "refresh_rate":"60",
+      "league":[
+         {
+            "league_type":"public",
+            "end_week":"16",
+            "name":"Yahoo Public 1173612",
+            "draft_status":"postdraft",
+            "league_id":"1173612",
+            "start_week":"7",
+            "current_week":9,
+            "is_pro_league":"0",
+            "league_update_timestamp":"1383290735",
+            "edit_key":9,
+            "url":            "http://football.fantasysports.yahoo.com/f1/1173612",
+            "start_date":"2013-10-15",
+            "end_date":"2013-12-23",
+            "scoring_type":"head",
+            "league_key":"314.l.1173612",
+            "num_teams":10,
+            "weekly_deadline":""
+         },
+         {
+            "teams":{
+               "count":10,
+               "1":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.2"
+                        },
+                        {
+                           "team_id":"2"
+                        },
+                        {
+                           "name":"Chicago Rattlers"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/2"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_03_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":2
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":0
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"0"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"JFKVXYSKK2VL6FXBJJJXEU5R4I",
+                                    "nickname":"scott b",
+                                    "manager_id":"2"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "0":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.1"
+                        },
+                        {
+                           "team_id":"1"
+                        },
+                        {
+                           "name":"the_RATTLESNAKES"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/1"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://www.gravatar.com/avatar/bcbbfd02e6297a8f610e9cf790f3b6d7?d=http%3A%2F%2Fl.yimg.com%2Fdh%2Fap%2Ffantasy%2Fimg%2Fprofile_96.png&s=96&r=pg",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":1
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":"1"
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"0"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"ODUBN7EYYM3A4VQ6Z5UWAXVJC4",
+                                    "nickname":"-- hidden --",
+                                    "manager_id":"1"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "3":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.4"
+                        },
+                        {
+                           "team_id":"4"
+                        },
+                        {
+                           "name":"Matt's Majestic Team"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/4"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_01_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":9
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":"5"
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"1"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"OSSWJKNXM6ERHQM7ZU35M3VT4I",
+                                    "nickname":"Matt",
+                                    "manager_id":"4"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "2":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.3"
+                        },
+                        {
+                           "team_id":"3"
+                        },
+                        {
+                           "name":"CJ1-7"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/3"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_01_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":10
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":"14"
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"5"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"ANJVW3R2G3EYLKFGRD7UG6I5NI",
+                                    "nickname":"CJ",
+                                    "manager_id":"3"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "5":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.6"
+                        },
+                        {
+                           "team_id":"6"
+                        },
+                        {
+                           "name":"Robert Hanson's Team"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/6"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_01_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":7
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":"1"
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"0"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"W4ZFU3UTGEDTI3SUIRG2463TVM",
+                                    "nickname":"Robert Hanson",
+                                    "manager_id":"6"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "4":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.5"
+                        },
+                        {
+                           "team_id":"5"
+                        },
+                        {
+                           "name":"EDWARD's Expert Team"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/5"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_01_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":8
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":"1"
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"0"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"BYVZNVOELX22CBC6MGNA6KJRU4",
+                                    "nickname":"EDWARD",
+                                    "manager_id":"5"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "7":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.8"
+                        },
+                        {
+                           "team_id":"8"
+                        },
+                        {
+                           "name":"brian's Team"
+                        },
+                        {
+                           "is_owned_by_current_login":1
+                        },
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/8"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_01_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":3
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":"1"
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"0"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "is_current_login":"1",
+                                    "guid":"UAVLBB4IITTQT5S5JSR6JWXHZM",
+                                    "nickname":"brian",
+                                    "manager_id":"8"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "6":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.7"
+                        },
+                        {
+                           "team_id":"7"
+                        },
+                        {
+                           "name":"A.J.'s Team"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/7"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_01_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":5
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":0
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"0"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"R2HYAZ6UVU3ZQSWE7QAWISHV5Y",
+                                    "nickname":"A.J.",
+                                    "manager_id":"7"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "9":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.10"
+                        },
+                        {
+                           "team_id":"10"
+                        },
+                        {
+                           "name":"edward's Team"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/10"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_01_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":6
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":0
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"0"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"5TO4UPZYDTZSTBWIWQRK5C5774",
+                                    "nickname":"edward",
+                                    "manager_id":"10"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               },
+               "8":{
+                  "team":[
+                     [
+                        {
+                           "team_key":"314.l.1173612.t.9"
+                        },
+                        {
+                           "team_id":"9"
+                        },
+                        {
+                           "name":"Worst team yet"
+                        },
+                        [
+
+                        ],
+                        {
+                           "url":                           "http://football.fantasysports.yahoo.com/f1/1173612/9"
+                        },
+                        {
+                           "team_logos":[
+                              {
+                                 "team_logo":{
+                                    "url":                                    "http://l.yimg.com/dh/ap/fantasy/nfl/img/icon_01_100.png",
+                                    "size":"large"
+                                 }
+                              }
+                           ]
+                        },
+                        [
+
+                        ],
+                        {
+                           "waiver_priority":4
+                        },
+                        [
+
+                        ],
+                        {
+                           "number_of_moves":"2"
+                        },
+                        {
+                           "number_of_trades":0
+                        },
+                        {
+                           "roster_adds":{
+                              "coverage_type":"week",
+                              "coverage_value":9,
+                              "value":"0"
+                           }
+                        },
+                        [
+
+                        ],
+                        {
+                           "managers":[
+                              {
+                                 "manager":{
+                                    "guid":"YGPSD2I45TNTBWZNGLESRGZYL4",
+                                    "nickname":"Duncan",
+                                    "manager_id":"9"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  ]
+               }
+            }
+         }
+      ],
+      "xml:      lang":"en-US",
+      "time":"113.03496360779ms"
+   }
+}

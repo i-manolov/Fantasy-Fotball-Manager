@@ -1,0 +1,102 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if what_data == 'player_stats' %}
+
+<h4> resp: {{ resp }} </h4>
+<h4> processed_content: {{ processed_content }} </h4>
+<h4> content: {{ content }} </h4>
+
+{% endif %}
+
+
+{% if what_data == 'stats' %}
+
+<h4> resp: {{ resp }} </h4>
+<h4> data: {{ processed_data }} </h4>
+<h4> content: {{ content }} </h4>
+
+{% endif %}
+
+
+{% if what_data == 'user' %}
+
+<h4> resp: {{ resp }} </h4>
+<h4> league id is : {{ league_id }} </h4>
+<h4> user GUID is : {{ user_guid }} </h4>
+<h4> data: {{ data }} </h4>
+
+{% endif %}
+
+{% if what_data == 'test' %}
+<h4> resp: {{ resp }} </h4>
+<h4> processed_data: {{ processed_data }} </h4>
+<h4> data: {{ data }} </h4>
+
+{% endif %}
+
+
+{% if what_data == 'league' %}
+
+<h4> resp: {{ resp }} </h4>
+<h3>json: {{ data }}</h3>
+<h1> Hi this is h1 block of text </h1><br>
+<h2>session user id: {{ user_id }}</h2><br>
+<h2> url of this league is:{{ league_url }} </h2><br>
+<h2> league_id is:{{ league_id }} </h2><br>
+<h2> start_date:{{ start_date }} </h2><br>
+<h2> end_date:{{ end_date }} </h2><br>
+<h2> num_teams: {{ num_teams }} </h2><br>
+{% endif %}
+
+
+{% if what_data == 'team' %}
+
+<p>json: {{ data }} </p>
+<p> team_key: {{ team_key }} </p>
+<p> yahoo_team_id: {{ yahoo_team_id }} </p>
+<p> yahoo_team_name: {{ yahoo_team_name }} </p>
+<p> yahoo_team_url: {{ yahoo_team_url }} </p>
+<p> yahoo_num_trades: {{ yahoo_num_trades }} </p>
+<p> yahoo_team_managers: {{ yahoo_team_managers }} </p>
+<p> resp: {{ resp }} </p>
+<p> {{ full_content }} </p>
+
+{% endif %}
+
+{% if what_data == 'players' %}
+
+<p>resp: {{ resp }} </p>
+<p>json: {{ data }} </p>
+
+
+<h4> isolated: {{ isolated }} </h4>
+
+<h4> test_data: {{ temp_list }} </h4>
+<h4> test_data2: {{ temp_list2 }} </h4>
+
+<h4> yahoo_players_team: {{ yahoo_players_team }} </h4>
+<h4> yahoo_players_team_abbr: {{ yahoo_players_team_abbr }} </h4>
+<h4> roster_position: {{ roster_position }} </h4>
+<h4> yahoo_players_number: {{ yahoo_players_number }} </h4>
+<h4> yahoo_player_bye_week: {{ yahoo_player_bye_week }} </h4>
+<h4> yahoo_player_key: {{ yahoo_player_key }} </h4>
+<h4> yahoo_player_id: {{ yahoo_player_id }} </h4>
+<h4> yahoo_players_position: {{ yahoo_players_position }} </h4>
+<h4> yahoo_full_name: {{ yahoo_full_name }} </h4>
+<h4> yahoo_first_name: {{ yahoo_first_name }} </h4>
+<h4> yahoo_last_name: {{ yahoo_last_name }} </h4>
+
+
+<h4> temp: {{ temp }} </h4>
+<h4> player_data: {{ player_data }} </h4>
+<h4> {{ full_content }} </h4>
+
+{% endif %}
+
+
+{% endblock %}
+		
+

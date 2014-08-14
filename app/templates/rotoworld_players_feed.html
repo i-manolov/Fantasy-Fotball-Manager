@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+{% for data in rss_feed %}
+	<header>
+	<h3 align="center">{{ data.title }}</h3>
+	</header>
+	<p align="center"> {{ data.content }} </p>
+	<p align="center"> {{ data.timestamp }} </p>
+	<p align="center"> <a href="{{ data.player_url }}"<a>{{ data.full_name }}</a> </p> <br><br>
+
+
+{% endfor %}
+{% endblock %}

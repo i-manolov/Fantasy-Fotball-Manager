@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+{% for data in rss_feed %}
+	<header>
+	<h3 align="center">{{ data.title }}</h3>
+	</header>
+	<p align="right"> {{ data.timestamp }} </p>
+	<p> {{ data.content_2 }} </p>
+	{% if data.media_url != None %}
+	<div style ="text-align: center;"><img src="{{ data.media_url }}" /></div>
+	<p> {{ data.media_inf }} </p>
+	{% endif %}
+		<p> <a href="{{ data.url }}"<a>rss story link</a> </p> <br><br>
+
+
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,59 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+
+<style>
+.left
+{
+  position: relative;
+  float: left;
+  width: 40%;
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.right
+{
+  position: relative;
+  float: right;
+  width: 40%;
+  display: inline-block;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+.logo
+{
+	width: 150px;
+	height: 150px;
+}
+
+</style>
+
+{% for data in teams %}
+{% if loop.index % 2 == 1 %}
+<div class="left">
+{% else %}
+<div class="right">
+{% endif %}
+<p>
+<img class="logo" src="{{ data.yahoo_team_logo }}"/>  <a href="{{ data.yahoo_team_url }}" <a><strong> {{data.team_name}}</strong> </a>
+<br><strong> Manager Name:</strong> {{ data.yahoo_manager_name }} 
+<br>
+</p>
+</div>
+{% endfor %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

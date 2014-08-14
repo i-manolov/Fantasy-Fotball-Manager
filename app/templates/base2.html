@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename ='css/f2/default.css')}}">
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://dimplejs.org/dist/dimple.v1.1.2.min.js"></script>
+		<script type=text/javascript>var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};</script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/jq/jq3.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/jq/jq2.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/jq/jq1.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot1.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot2.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot3.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot4.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot5.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot6.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot7.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot8.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot9.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot10.js')}}"></script>
+		<script type="text/javascript" src= "{{ url_for('static',filename= 'js/plot11.js')}}"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		{% if what_data == 'players' %}
+		<title> FantasyPlus - Fantasy Football Tracker</title>
+		{% else %}
+		<title> Guest Browsing </title>
+		{% endif %}
+
+		
+	</head>
+	<body>
+	
+		<div id="topheader">
+		
+			<div id="top">
+				
+				<p>Fantasy Football Tracker:</p>
+				
+				<div id="logo">
+				
+				<img src="static/images/logo.jpg" alt="Fantasyplus logo"/>
+				
+				</div>
+		
+				<div id="social-media">
+					<p> Connect with US</p>
+					<ul>
+						<li><a href="http://www.facebook.com"><img src="static/images/facebook.png" /></a></li>
+						<li><a href="http://www.google.com"><img src="static/images/google.png" /></a></li>
+						<li><a href="http://www.tumblr.com"><img src="static/images/tumblr.png" /></a></li>
+						<li><a href="http://www.twitter.com"><img src="static/images/twitter.png" /></a>"</li>
+					</ul>
+					<p>Contact Us for More Info -- 212 650 6632</p>
+				</div>		
+						
+			</div>
+				
+			<div id="topnav">
+				<ul>
+					<li><a href="{{ url_for('data') }}">Home</a></li>
+					<li><a href="{{ url_for('profile') }}">Profile</a></li>
+					<li><a href="{{ url_for('signup') }}">Signup</a></li>
+					<li><a href="{{ url_for('login') }}">Login</a></li>
+					<li><a href="{{ url_for('yahoo_oauth') }}">Yahoo Authentication</a></li>
+					<li><a href="{{ url_for('yahoo_get_league') }}"> Get Fantasy League Info</a></li>
+					
+					{% if what_data == 'players' %}
+					<li><a href="{{ url_for('logout') }}">Logout</a></li>
+					{% endif %}
+				</ul>	
+										
+			</div>
+
+			
+		</div>
+		{% block content %}{% endblock %}
+	</body>
+
+</html>

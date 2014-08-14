@@ -1,0 +1,330 @@
+{% extends "base2.html" %}
+{% block content %}
+
+<h1> top players by passing yds <h1>
+<p>
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.passing_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</p>
+
+<h1> top players by receiving yds <h1>
+<p>
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top%}
+		{% if p.period %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.receiving_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.receiving_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.receiving_yds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</p>
+
+<h1> top players by passing tds <h1>
+<p>
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.passing_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.passing_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.passing_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</p>
+
+<h1> top players by receiving tds <h1>
+<p>
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period %}
+			 <td>{{ p.receiving_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period1 %}
+			 <td>{{ p.receiving_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+
+	<table class = table1>
+		<tr> <td>Player's name</td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.name }} </td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> Team </td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.team }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+
+		<tr> <td> passing_yds season </td>
+		{% for p in top %}
+		{% if p.period2 %}
+			 <td>{{ p.receiving_tds }}</td>
+		{% endif %}
+		{% endfor %}
+		</tr>
+	</table>
+</p>
+
+
+
+{% endblock %}

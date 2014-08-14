@@ -1,0 +1,6 @@
+player:
+player_id, gsis_name, full_name, first_name, last_name,
+team, position, profile_id, profile_url, uniform_number,
+birthdate, college, height, weight, years_pro, status
+
+

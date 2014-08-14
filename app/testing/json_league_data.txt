@@ -1,0 +1,30 @@
+{
+   "fantasy_content":{
+      "yahoo:      uri":"/fantasy/v2/league/314.l.1173612/metadata",
+      "copyright":"Data provided by Yahoo! and STATS, LLC",
+      "refresh_rate":"60",
+      "league":[
+         {
+            "league_type":"public",
+            "end_week":"16",
+            "name":"Yahoo Public 1173612",
+            "draft_status":"postdraft",
+            "league_id":"1173612",
+            "start_week":"7",
+            "current_week":9,
+            "is_pro_league":"0",
+            "league_update_timestamp":"1383290735",
+            "edit_key":9,
+            "url":            "http://football.fantasysports.yahoo.com/f1/1173612",
+            "start_date":"2013-10-15",
+            "end_date":"2013-12-23",
+            "scoring_type":"head",
+            "league_key":"314.l.1173612",
+            "num_teams":10,
+            "weekly_deadline":""
+         }
+      ],
+      "xml:      lang":"en-US",
+      "time":"34.999132156372ms"
+   }
+}

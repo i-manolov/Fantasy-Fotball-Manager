@@ -1,0 +1,24 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<script>
+
+  $(function() {
+    $("#accordion").accordion({ header: "h3", collapsible: true, active: false });
+  });
+</script>
+
+<div id='accordion' style='width:25%;position:absolute; left:37%; '>
+{% for data in rss_feed %}
+	
+	<h3 align="center">{{ data.title }}</h3>
+	
+    <div>
+	<p align="center"> {{ data.timestamp }} </p>
+	<p align="center"> {{ data.content_1 }} </p>
+	<p align="center"> <a href="{{ data.url }}"<a>rss story link</a> </p> <br><br>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

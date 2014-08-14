@@ -1,0 +1,201 @@
+﻿/*cssreset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+					margin: 0;
+					padding: 0;
+					border: 0;
+					font-size: 100%;
+					font: inherit;
+					vertical-align: baseline;
+					background:transparent;
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body 			{	line-height: 1;}
+ul				{	}
+ol				{	list-style-type:decimal;	}
+
+ul li 			{	color:#000;	font-size:12px;	}
+
+ol li 			{	color:#000;	font-size:12px;	}
+
+dl				{	}
+	
+dt				{	}
+
+dd				{	}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table 			{	border-collapse: collapse; border-spacing: 0; width:100%; }
+
+tr			{	}
+				
+title			{	background-color:red; color:fuchsia;	}
+
+.im1 			{	margin: 0px auto; padding: 0px; border: 3px lime solid;	visibility:inherit;}
+
+#wrapper		{	width:98%; margin :0px auto; /*background-color:#C0C0C0;*/ }
+
+
+#wrapper h1 		{	font-size:16px; text-align:center; color:red; background-color:#FF9966; font-size:large; padding:10px 0px; }
+
+
+#first 			{	background-color:white;	float:left; width:70%;	height:1200px; }
+
+#second 		{	background-color:white;	float:right; width:30%;	height:1200px; }
+
+#third 			{	float:left; background-color:white; width:0%;	height:1200px; visibility:hidden;}
+
+#chart_div1 		{	background-color:white;		width:100%;	}
+
+#chart_div1-2		{	background-color:white;		width:100%;	height:300px; }
+
+#chart_div1-3		{	background-color:white;		width:100%;	height:300px; }
+
+#chart_div1-4		{	background-color:white;		width:100%;	height:300px; }
+
+#chart_div2 		{	background-color:red;		width:100%;	height: 300px;	}
+
+#chart_div3 		{	background-color:gray;		width:100%;	height: 300px;	padding:0px 0px;	}
+
+#chart_div4 		{	background-color:fuchsia; 	width:100%;	height: 300px;	padding:0px 0px;	}
+
+
+#chart_div5 		{	background-color:lime;		width:100%;	height: 300px;	padding:0px 0px;	}
+	
+#chart_div6, 
+#chart_div7, 
+#chart_div8, 
+#chart_div9 		{	background-color:maroon;	width:100%; 	height:300px; 	padding:0px 0px; visibility:inherit;	}
+
+#topheader 		{	background-color:#999966;	width:100%;	}
+
+#top 			{	background-color:#000000; 	width:100%;	padding:20px 0px;	overflow:hidden;	}
+	
+#logo 			{	margin: 0 0 0 10px; float:left;	}
+
+#social-media 		{	float:right; margin: 0 10px 0 0px;	}
+
+#social-media p		{	color:#ffffff; font-size:11px; margin:4px 10px 4px 0px;}
+
+#social-media img	{	width:24px; height:24px;	}
+
+#social-media ul li 	{	display:inline; }
+
+#topnav 			{	background-color:#333333;	width:100%;	padding:0px 0px;	clear:both;	}
+
+#topnav ul			{	width:100%; float:left; margin:0px; background-color:#333333; border-bottom:3px #cccccc solid; }
+	
+#topnav	ul li		{	display:inline; }
+
+#topnav ul li a 	{	float:left;	padding:10px 20px;	}
+#topnav a:link		{	color:#ffffff;	}
+#topnav a:visited	{	color:#ffffff;	}
+#topnav a:active	{	color:#ffffff;	}
+#topnav a:hover		{	color:#ffffff; background-color:#990000; }
+#topnav a:focus		{	color:#ffffff;	}
+
+path.line 		{    	fill: none; 	stroke: #666; stroke-width: 1.5px; }
+
+.domain 		{	stroke-width: 1px; }
+
+circle 			{	cursor: pointer; }
+
+.axiss 			{	shape-rendering: crispEdges; }
+
+.axiss line, .axiss path 	{	stroke-width: 1px; stroke: #000; fill: none; }
+
+.tooltip 		{	display: none; }
+
+.tooltip.active 	{	display: block; }
+
+.tooltip rect 		{	fill: #ff0000; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  opacity: 1;
+}
+
+.axis text { font-size:10px; }
+
+body { font: 12px sans-serif; }
+.circles { opacity: .5; }
+
+.tipsy { font-size:11px; margin-top:-10px;}
+
+.guide line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  opacity: 0;
+	}
+
+.table1 { border: 2px solid blue; margin: 10px;
+					padding: 2px;
+					width:100%;
+					font-size: 100%;
+					font: inherit;
+					vertical-align: baseline;
+					background-color:red;}
+
+.table2 { border: 2px solid blue; margin: 10px;
+					padding: 2px;
+					width:100%;
+					font-size: 100%;
+					font: inherit;
+					vertical-align: baseline;
+					background-color:yellow;}
+
+.table3 { border: 2px solid blue; margin: 10px;
+					padding: 2px;
+					width:100%;
+					font-size: 100%;
+					font: inherit;
+					vertical-align: baseline;
+					background-color:green;}
+
+.myh1 { background-color: DarkSlateGray; color:white; padding:10px;}
+
+
+#toptab {float:left; bacground-color:LightCyan; width: 50%; overflow:hidden;}
+
+#graph {position: relative; float:right; width: 50%; overflow:hidden;}
+		
+

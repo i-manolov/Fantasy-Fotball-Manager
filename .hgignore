@@ -1,0 +1,10 @@
+syntax: glob
+**.sw[po]
+**.py[co]
+**~
+**.env
+**.*swp
+cron_script.py
+tmp
+db_repository/*
+syntax: regexp

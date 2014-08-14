@@ -1,0 +1,8 @@
+temporary issues list becuase i'm too lazy too add to issues/wiki
+
+1. need to check that entered emails are valid. right now, you can enter email as 'email' instead of 'email@email.com'
+2. need to check that there are no duplicate usernames, emails, etc
+
+ivan look here for models:
+/.env/lib/python2.7/site-packages/nflgame
+
